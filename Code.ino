@@ -42,7 +42,7 @@ void sendSMS(String message)
 {
  SIM900.print("AT+CMGF=1"); 
  delay(1000);
-SIM900.println("AT+CMGS=\"+918837783395\"\r"); 
+SIM900.println("AT+CMGS=\"+91**********\"\r"); 
  delay(1000);
  SIM900.println("Fire Detected");
  SIM900.println((char)26); 
@@ -50,7 +50,7 @@ SIM900.println("AT+CMGS=\"+918837783395\"\r");
  Serial.println("Calling through GSM Modem");
  Serial.begin(9600);//setting baudrate at 9600;
  delay(1000);
- Serial.println("ATD8837783395;");
+ Serial.println("ATD**********;");
  delay(1000);
  SIM900.println("ATH");
 SIM900.println();
